@@ -29,25 +29,28 @@ while voto != 0:
         total_votos += 1
         total_joao += 1
 
-    if voto == 2:
+    elif voto == 2:
         total_votos += 1
         total_maria += 1
 
-    if voto == 3:
+    elif voto == 3:
         total_votos += 1
         total_jose += 1
     
-    if voto == 4:
+    elif voto == 4:
         total_votos += 1
         total_chico += 1
 
-    if voto == 5:
+    elif voto == 5:
         total_votos += 1
         total_nulo += 1
 
-    if voto == 6:
+    elif voto == 6:
         total_votos += 1
         total_branco += 1
+        
+    if voto > 6:
+        print('VALOR INVÁLIDO! TENTE NOVAMENTE.\n')
 
     print(f'Total de votos: {total_votos}')
     print(f'Candidato João: {total_joao}')
